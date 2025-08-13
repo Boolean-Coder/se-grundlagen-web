@@ -1,19 +1,42 @@
 /* <link rel="stylesheet" href="styles.css">
 */
 
-
-.nav-button {
-    display: inline-block;
+/* Container für die gesamte Navigationsleiste */
+.navbar {
+    display: flex
+;
+    justify-content: center;
+    background-color: #b3bbc4;
+    padding: 0.75%;
+    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Stil für die einzelnen Navigations-Links */
+.nav-item {
+    display: flex;
+    align-items: center;
     padding: 10px 20px;
-    background-color: #646f7b; /* Blau */
-    color: rgb(118, 112, 112);
+    margin: 0 10px;
+    background-color: #95b5d7;
+    color: rgb(178, 24, 24);
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    border: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.nav-button:hover {
-    background-color: #0056b3; /* dunkleres Blau beim Überfahren */
+/* Hover-Effekt für die Links */
+.nav-item:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Stil für die Icons innerhalb der Links */
+.nav-item i {
+    margin-right: 8px;
+    font-size: 18px;
 }
