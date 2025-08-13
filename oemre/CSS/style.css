@@ -1,0 +1,19 @@
+/* <link rel="stylesheet" href="styles.css">
+*/
+
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #646f7b; /* Blau */
+    color: rgb(118, 112, 112);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* dunkleres Blau beim Überfahren */
+}
