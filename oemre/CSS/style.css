@@ -1,10 +1,37 @@
 /* <link rel="stylesheet" href="styles.css">
 */
 
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  
+h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    color: darkblue;
+}
+  
+h2 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    color: #3f6082;
+}
+  
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+#Projekte{
+    font-size: larger;
+    display: contents;
+    line-height: 10%;
+    color: #506e3a;
+    background-color: #ad5656;
+}
 /* Container für die gesamte Navigationsleiste */
 .navbar {
-    display: flex
-;
+    display: flex;
     justify-content: center;
     background-color: #b3bbc4;
     padding: 0.75%;
@@ -32,11 +59,44 @@
 /* Hover-Effekt für die Links */
 .nav-item:hover {
     background-color: #0056b3;
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 
 /* Stil für die Icons innerhalb der Links */
 .nav-item i {
     margin-right: 8px;
     font-size: 18px;
+}
+
+#Projekte{
+    font: 2em 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #421a4e;
+    background-color: #424c46;
+    width: 40%;
+    margin: 20px ;
+    
+}
+
+.img-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #977894;
+    background-color: #daf0f1;
+    padding: 10%;
+}
+
+.img-field img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+  
+.img-field .head {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
