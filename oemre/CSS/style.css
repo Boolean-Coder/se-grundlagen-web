@@ -10,11 +10,13 @@ h1 {
     font-size: 2.5rem;
     color: darkblue;
 }
-  
+
 h2 {
     font-family: 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
-    color: #3f6082;
+    color: #32042e;
+    display: flex;
+    flex-direction: column;
 }
   
 p {
@@ -22,6 +24,49 @@ p {
     line-height: 1.6;
     color: #333;
 }
+
+
+
+/* Standart Pseudo-Selektoren für Browser, erhöhen das Suchpotential */
+/*a:link{color:green;} */ /*unbesuchte Links*/
+/*a:visited{color: purple;}*/  /*besuchte Link*/
+/*a:hover{color: red;}     */  /*Maus ist drüber*/
+/*a:active{color: orange;} */  /*wird gerade gecklickt*/
+/*
+p:hover{background-color: yellow;} /**/
+/*img:hover{border: 3px solid red;}
+h2:hover{ 
+    color: #6d7785;
+
+
+}
+*/
+/*p:first-child{font-weight: bold;} /* erstes p-Element*/
+/*li:last-child{color:red}      */  /*letztes li-Element*/
+
+p::before{
+    content: "👉";                /* Text/Symbol VOR dem Element  als Unicode 👉= \1F449*/
+    color:blue
+}
+
+p::after{
+    content: "✓";                   /* Text/Symbol NACH dem Element Als Unicode ✓ = \2713\0020 */
+    color:green
+}
+*/
+blockquote::before{
+    content: "\201E";       /* in CSS \201E IN Unicode &#8216;*/
+    color: #ad2579;
+    font-size: 125%;
+}
+
+blockquote::after{
+    content: "\201C";             /* in CSS \201E IN Unicode &#8217;*/
+    color: #ad2579;
+    font-size: 125%;
+
+}
+
 #Projekte{
     font-size: larger;
     display: contents;
@@ -99,4 +144,13 @@ p {
     font-size: 1.2rem;
     color: #333;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.zitat{
+    size: 10px;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
 }
